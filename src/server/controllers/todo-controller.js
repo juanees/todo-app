@@ -1,5 +1,4 @@
-// TODO: ADD DB MODEL
-let todos = [];
+const Todo = require('../models/todo-model')
 
 createTodo = (req, res) => {
   const body = req.body;

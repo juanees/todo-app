@@ -1,0 +1,21 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "server for todo app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/juanees/todo-app/server"
+  },
+  "keywords": [
+    "todo",
+    "app",
+    "express",
+    "nodejs"
+  ],
+  "author": "Juan Emilio Nieva Casanova",
+  "license": "ISC"
+}

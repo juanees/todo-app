@@ -1,6 +1,4 @@
 #!/bin/bash
-set -e
- 
 echo ======================================================
 echo creating $MONGO_INITDB_USERNAME in database $MONGO_INITDB_DATABASE
 echo ======================================================
@@ -21,6 +19,10 @@ admin.auth('$MONGO_INITDB_ROOT_USERNAME', '$MONGO_INITDB_ROOT_PASSWORD');
 db=db.getSiblingDB('$MONGO_INITDB_DATABASE');
 
 use $MONGO_INITDB_DATABASE;
+
+db.$MONGO_INITDB_DATABASE.insert( { } )  
+db.$MONGO_INITDB_DATABASE.remove( { } )
+
 db.createUser({
   user:  '$MONGO_INITDB_USERNAME',
   pwd: '$MONGO_INITDB_PASSWORD',

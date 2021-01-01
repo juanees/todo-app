@@ -1,0 +1,11 @@
+admin = db.getSiblingDB('admin');
+db=db.getSiblingDB('todos');
+use todos;
+admin = db.getSiblingDB('admin');
+db=db.getSiblingDB('todos');
+use todos;
+admin = db.getSiblingDB('admin');
+db=db.getSiblingDB('todos');
+use todos;
+db.todos.insert( { } )
+db.todos.remove( { } )

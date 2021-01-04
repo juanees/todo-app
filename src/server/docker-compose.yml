@@ -9,9 +9,10 @@ services:
     hostname: mongodb
     restart: always
     volumes:
-      - ./.docker/mongodb/files/mongod.conf:/etc/mongod.conf
-      - ./.docker/mongodb/files/initdb.d/:/docker-entrypoint-initdb.d/
-      - ./home/mongodb:/home/mongodb
+      - ./docker/mongodb/mongod.conf:/etc/mongod.conf
+      - ./docker/mongodb/initdb.d/:/docker-entrypoint-initdb.d/
+      # - ./home/mongodb:/home/mongodb
+      - ./docker/mongodb:/home/mongodb
       - ./.docker/mongodb/data/db/:/data/db/
       - ./.docker/mongodb/data/log/:/var/log/mongodb/
     env_file:

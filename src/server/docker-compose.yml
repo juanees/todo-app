@@ -30,6 +30,8 @@ services:
     - mongo:mongo
     depends_on:
     - mongo
+    env_file:
+      - .env
     environment:
       ME_CONFIG_MONGODB_ADMINUSERNAME: ${MONGO_INITDB_ROOT_USERNAME}
       ME_CONFIG_MONGODB_ADMINPASSWORD: ${MONGO_INITDB_ROOT_PASSWORD}

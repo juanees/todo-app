@@ -5,6 +5,7 @@ const Todo = new Schema(
   {
     content: { type: String, required: true },
     completed: { type: Boolean, required: false },
+    tags: { type: [String], required: false },
   },
   { timestamps: true }
 );
